@@ -3,15 +3,19 @@ body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     background: linear-gradient(135deg, #ffecd2, #fcb69f);
-    height: 100vh;
+
+    min-height: 100vh;     /* вместо height */
     display: flex;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
+
+    /* важно */
+    align-items: flex-start;
+    padding: 20px;
+    overflow-y: auto;
 }
 
 .card {
-    background: white;
+    background: pink;
     border-radius: 20px;
     padding: 24px;
     width: 90%;
@@ -64,3 +68,4 @@ button.btn:hover {
         transform: translateY(110vh) rotate(360deg);
     }
 }
+
