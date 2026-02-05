@@ -1,3 +1,4 @@
+/* ------------------ Общи стилове ------------------ */
 body {
     margin: 0;
     font-family: 'Poppins', system-ui, sans-serif; /* основен текст */
@@ -25,7 +26,7 @@ body {
 
 /* Заглавие */
 h1 {
-    font-family: 'Pacifico', cursive;  /* празничен ръкописен шрифт */
+    font-family: 'Pacifico', cursive;
     font-size: 1.8rem;
     margin-bottom: 10px;
     color: #ff5e8a;
@@ -61,8 +62,8 @@ button.btn:hover {
 /* ------------------ Конфети ------------------ */
 .confetti {
     position: absolute;
-    top: -10px;
-    opacity: 0.7;
+    top: 0;
+    opacity: 0.8;
     border-radius: 50%;
     animation: fall 5s linear infinite;
 }
@@ -73,5 +74,14 @@ button.btn:hover {
     }
     100% {
         transform: translateY(110vh) rotate(360deg);
+    }
+}
+
+/* Мобилна оптимизация за видимост на конфетите */
+@media (max-width: 480px) {
+    .confetti {
+        width: 8px !important;
+        height: 8px !important;
+        opacity: 0.9;
     }
 }
