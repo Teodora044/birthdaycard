@@ -35,7 +35,7 @@ h1 {
 
 /* Текст на пожеланието */
 .card p {
-    font-family: 'Dancing Script', cursive; /* нов стил за пожеланието */
+    font-family: 'Baloo 2', cursive; /* четлив и весело разчупен шрифт */
     font-weight: 400;
     font-size: 1.2rem;
     color: #444;
@@ -85,3 +85,4 @@ button.btn:hover {
         opacity: 0.9;
     }
 }
+
