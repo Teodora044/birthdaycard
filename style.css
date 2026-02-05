@@ -26,7 +26,7 @@ body {
 
 /* Заглавие */
 h1 {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico';
     font-size: 1.8rem;
     margin-bottom: 10px;
     color: #ff5e8a;
@@ -35,7 +35,7 @@ h1 {
 
 /* Текст на пожеланието */
 .card p {
-    font-family: 'Baloo 2', cursive; /* четлив и весело разчупен шрифт */
+    font-family: 'Baloo 2'; /* четлив и весело разчупен шрифт */
     font-weight: 400;
     font-size: 1.2rem;
     color: #444;
@@ -85,4 +85,5 @@ button.btn:hover {
         opacity: 0.9;
     }
 }
+
 
