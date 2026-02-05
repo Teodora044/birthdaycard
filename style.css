@@ -1,7 +1,6 @@
-/* Общи стилове */
 body {
     margin: 0;
-    font-family: 'Poppins', system-ui, sans-serif; /* <-- нов шрифт */
+    font-family: 'Poppins', system-ui, sans-serif; /* основен текст */
     background: linear-gradient(135deg, #ffecd2, #fcb69f);
     min-height: 100vh;
     display: flex;
@@ -10,6 +9,8 @@ body {
     padding: 20px;
     overflow-y: auto;
 }
+
+/* ------------------ Картичка ------------------ */
 .card {
     background: pink;
     border-radius: 20px;
@@ -22,23 +23,26 @@ body {
     position: relative;
 }
 
+/* Заглавие */
 h1 {
-    font-family: 'Pacifico', cursive;  /* <-- нов празничен шрифт */
+    font-family: 'Pacifico', cursive;  /* празничен ръкописен шрифт */
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #ff5e8a;                    /* по-жив цвят за картичка */
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.15); /* лек ефект за изскачане */
+    color: #ff5e8a;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
 }
 
-p {
-    font-family: 'Poppins', sans-serif;
+/* Текст на пожеланието */
+.card p {
+    font-family: 'Dancing Script', cursive; /* нов стил за пожеланието */
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #444;
     line-height: 1.6;
     margin: 8px 0;
 }
 
+/* ------------------ Бутон ------------------ */
 button.btn {
     background: #ff6f61;
     color: white;
@@ -54,7 +58,7 @@ button.btn:hover {
     background: #ff3b2e;
 }
 
-/* Конфети стилове */
+/* ------------------ Конфети ------------------ */
 .confetti {
     position: absolute;
     top: -10px;
@@ -71,6 +75,3 @@ button.btn:hover {
         transform: translateY(110vh) rotate(360deg);
     }
 }
-
-
-
